@@ -1,6 +1,6 @@
-import User from "../models/User";
+import User from "../models/User.js";
 
-/*read*/
+/*get*/
 export const getUser = async (req, res) => {
     try {
         const { id } = req.params;
@@ -63,4 +63,4 @@ export const addRemoveFriend = async (req, res) => {
     } catch (err) {
         res.status(404).json({ message: err.message });
     }
-}
+};
