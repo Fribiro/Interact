@@ -57,9 +57,25 @@ const Navbar = () => {
       >
       </Typography>
       {isNonMobileScreens && (
-        <FlexBetween backgroundColor={neutralLight}></FlexBetween>
+        <FlexBetween backgroundColor={neutralLight} borderRadius="9px" gap="3rem" padding="0.1rem 1.5rem">
+          <InputBase placeholder='Search...' />
+          <IconButton>
+            <Search />
+          </IconButton>
+        </FlexBetween>
       )}
     </FlexBetween>
+
+    {/* desktop nav */}
+    {isNonMobileScreens ? (
+      <FlexBetween gap="2rem">
+        <IconButton onClick={() => dispatch(setMode())}>
+
+        </IconButton>
+      </FlexBetween>
+    ) : (
+      <IconButton></IconButton>
+    )}
   </FlexBetween>
 }
 
