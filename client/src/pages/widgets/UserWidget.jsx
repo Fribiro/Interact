@@ -51,8 +51,6 @@ import {
         friends,
       } = user;
 
-  };
-
   return (
     <WidgetWrapper>
       {/* FIRST ROW */}
@@ -150,6 +148,6 @@ import {
         </FlexBetween>
       </Box>
     </WidgetWrapper>    
-);
+)};
 
   export default UserWidget;
