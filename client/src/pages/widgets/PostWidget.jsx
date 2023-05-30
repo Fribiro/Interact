@@ -9,7 +9,7 @@ import { Box, Divider, IconButton, Typography, useTheme } from '@mui/material';
 import FlexBetween from 'components/FlexBetween';
 import Friend from 'components/Friend';
 import WidgetWrapper from 'components/WidgetWrapper';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setPost } from 'state';
 
 const PostWidget = ({
@@ -72,7 +72,7 @@ const PostWidget = ({
       <FlexBetween mt="0.25rem">
         <FlexBetween gap="1rem">
           <FlexBetween gap="0.3rem">
-            <IconButton onClick={patchLike}>
+            <IconButton onClick={patchLikes}>
               {isLiked ? (
                 <FavoriteOutlined sx={{ color: primary }} />
               ) : (
