@@ -35,7 +35,6 @@ const PostWidget = ({
   const primary = palette.primary.main;
 
   const patchLikes = async () => {
-    const patchFriend = async () => {
         const response = await fetch(`http://localhost:3001/posts/${postId}/like`, {
           method: 'PATCH',
           headers: { 
@@ -46,7 +45,6 @@ const PostWidget = ({
       });
       const updatedPost = await response.json();
       dispatch(setPost({ post: updatedPost }));
-    };
   };
 
   return (
