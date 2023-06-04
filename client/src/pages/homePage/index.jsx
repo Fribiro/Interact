@@ -5,7 +5,6 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import MyPostWidget from 'pages/widgets/MyPostWidget'
 import PostsWidget from 'pages/widgets/PostsWidget';
-import PostWidget from 'pages/widgets/PostWidget';
 import AdvertWidget from 'pages/widgets/AdvertWidget';
 import FriendListWidget from 'pages/widgets/FriendListWidget';
 
